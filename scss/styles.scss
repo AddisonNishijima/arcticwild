@@ -13,7 +13,12 @@ body {
   background: url(../img/hero.jpg) top center no-repeat;
   height: 100vh;
   background-size: cover;
-  display: block;
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  img {
+    height: 50px;
+  }
   span {
     font-size: 20px;
     line-height: 30px;
@@ -53,13 +58,16 @@ body {
 #top-nav-list {
   list-style-type: none;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   li {
     color: white;
     font-family: 'Fjalla One', sans-serif;
     line-height: 50px;
     padding: 0px 12px;
     font-size: 15px;
+    &:hover {
+      color: #dc7725;
+    }
   }
 }
 
@@ -74,7 +82,10 @@ body {
   justify-content: center;
   align-content: space-around;
   li {
-    color: white;
+    color: #bdbdb7;
+    &:hover {
+      color: white;
+    }
     padding-left: 4em;
   }
 }
@@ -86,11 +97,13 @@ body {
 .gallery-row {
   display: flex;
   flex-direction: row;
+  flex-flow: wrap;
 }
 
 .gallery-row-2 {
   display: flex;
   flex-direction: row;
+  flex-flow: wrap;
 }
 
 .flex-panel {
@@ -102,7 +115,8 @@ body {
   width: 50%;
   background: url(../img/raft.jpg);
   background-size: cover;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 768px) {
+    height: 50%;
     width: 100%;
   }
 }
@@ -112,7 +126,7 @@ body {
   background: url(../img/basecamp.jpg);
   background-position: center;
   overflow: hidden;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
   }
 }
@@ -121,7 +135,7 @@ body {
   width: 25%;
   background: url(../img/backpacking.jpg);
   background-size: cover;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
   }
 }
@@ -130,7 +144,7 @@ body {
   width: 25%;
   background: url(../img/canoe.jpg);
   background-size: cover;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
   }
 }
@@ -140,7 +154,7 @@ body {
   background: url(../img/photo.jpg);
   background-position: center;
   overflow: hidden;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
   }
 }
@@ -149,13 +163,13 @@ body {
   width: 50%;
   background: url(../img/custom.jpg);
   background-size: cover;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
   }
 }
 
 .icon {
-  height: 420px;
+  height: 340px;
   img {
     width: 100%;
   }
@@ -163,17 +177,37 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .icon a {
+  background: url(../img/bg-trans-icon.png);
+  height: 40px;
+  width: 40px;
+  padding: 20px;
+  border-radius: 100%;
   &:hover {
     transform: scale(1.3);
     transition-property: scale;
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
   }
-  background: url(../img/bg-trans-icon.png);
-  height: 40px;
-  width: 40px;
-  padding: 20px;
-  border-radius: 100%;
+}
 
+.text {
+  height: 40px;
+  padding-left: 20px;
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 22px;
+  @media screen and (max-width: 768px) {
+    padding: 20px;
+  }
+}
+
+.line {
+  display: flex;
+  justify-content: flex-start;
+  background: #dc7725;
+  height: 5px;
+  width: 40px;
+  margin-bottom: 8px;
 }

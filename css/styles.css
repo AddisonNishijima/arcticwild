@@ -12,7 +12,11 @@ body {
   background: url(../img/hero.jpg) top center no-repeat;
   height: 100vh;
   background-size: cover;
-  display: block; }
+  display: flex;
+  justify-content: center;
+  padding-top: 80px; }
+  #hero img {
+    height: 50px; }
   #hero span {
     font-size: 20px;
     line-height: 30px;
@@ -46,13 +50,15 @@ body {
 #top-nav-list {
   list-style-type: none;
   display: flex;
-  justify-content: center; }
+  justify-content: flex-end; }
   #top-nav-list li {
     color: white;
     font-family: 'Fjalla One', sans-serif;
     line-height: 50px;
     padding: 0px 12px;
     font-size: 15px; }
+    #top-nav-list li:hover {
+      color: #dc7725; }
 
 #sub-nav {
   border: solid 1px black; }
@@ -64,19 +70,23 @@ body {
   justify-content: center;
   align-content: space-around; }
   #middle-nav-list li {
-    color: white;
+    color: #bdbdb7;
     padding-left: 4em; }
+    #middle-nav-list li:hover {
+      color: white; }
 
 .gallery {
   width: 100vw; }
 
 .gallery-row {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  flex-flow: wrap; }
 
 .gallery-row-2 {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  flex-flow: wrap; }
 
 .flex-panel {
   height: 420px;
@@ -86,8 +96,9 @@ body {
   width: 50%;
   background: url(../img/raft.jpg);
   background-size: cover; }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 768px) {
     #raft {
+      height: 50%;
       width: 100%; } }
 
 #basecamp {
@@ -95,7 +106,7 @@ body {
   background: url(../img/basecamp.jpg);
   background-position: center;
   overflow: hidden; }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 768px) {
     #basecamp {
       width: 100%; } }
 
@@ -103,7 +114,7 @@ body {
   width: 25%;
   background: url(../img/backpacking.jpg);
   background-size: cover; }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 768px) {
     #backpack {
       width: 100%; } }
 
@@ -111,7 +122,7 @@ body {
   width: 25%;
   background: url(../img/canoe.jpg);
   background-size: cover; }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 768px) {
     #canoe {
       width: 100%; } }
 
@@ -120,7 +131,7 @@ body {
   background: url(../img/photo.jpg);
   background-position: center;
   overflow: hidden; }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 768px) {
     #photo {
       width: 100%; } }
 
@@ -128,12 +139,12 @@ body {
   width: 50%;
   background: url(../img/custom.jpg);
   background-size: cover; }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 768px) {
     #custom {
       width: 100%; } }
 
 .icon {
-  height: 420px;
+  height: 340px;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -151,5 +162,23 @@ body {
     transition-property: scale;
     transition-duration: 1s;
     transition-timing-function: ease-in-out; }
+
+.text {
+  height: 40px;
+  padding-left: 20px;
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 22px; }
+  @media screen and (max-width: 768px) {
+    .text {
+      padding: 20px; } }
+
+.line {
+  display: flex;
+  justify-content: flex-start;
+  background: #dc7725;
+  height: 5px;
+  width: 40px;
+  margin-bottom: 8px; }
 
 /*# sourceMappingURL=styles.css.map */
