@@ -9,10 +9,6 @@ body {
   font-size: 18px;
 }
 
-h2 {
-  text-align: center;
-}
-
 #hero {
   background: url(../img/hero.jpg) top center no-repeat;
   height: 100vh;
@@ -28,6 +24,18 @@ h2 {
     font-size: 120px;
     line-height: 120px;
     color: white;
+    text-align: center;
+  }
+  @media screen and (max-width: 768px) {
+    height: 25vh;
+    span {
+      font-size: 12px;
+      line-height: 20px;
+    }
+    h2 {
+      font-size: 50px;
+      line-height: 50px;
+    }
   }
 }
 
@@ -36,6 +44,10 @@ h2 {
   justify-content: center;
   margin-top: 200px;
   margin-bottom: -200px;
+  @media screen and (max-width: 768px) {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
 }
 
 #top-nav-list {
@@ -56,12 +68,14 @@ h2 {
 }
 
 #middle-nav-list {
+  padding: 20px;
   list-style-type: none;
   display: flex;
   justify-content: center;
+  align-content: space-around;
   li {
     color: white;
-    padding-left: 20px;
+    padding-left: 4em;
   }
 }
 
@@ -88,6 +102,9 @@ h2 {
   width: 50%;
   background: url(../img/raft.jpg);
   background-size: cover;
+  @media screen and (max-width: 400px) {
+    width: 100%;
+  }
 }
 
 #basecamp {
@@ -95,18 +112,27 @@ h2 {
   background: url(../img/basecamp.jpg);
   background-position: center;
   overflow: hidden;
+  @media screen and (max-width: 400px) {
+    width: 100%;
+  }
 }
 
 #backpack {
   width: 25%;
   background: url(../img/backpacking.jpg);
   background-size: cover;
+  @media screen and (max-width: 400px) {
+    width: 100%;
+  }
 }
 
 #canoe {
   width: 25%;
   background: url(../img/canoe.jpg);
   background-size: cover;
+  @media screen and (max-width: 400px) {
+    width: 100%;
+  }
 }
 
 #photo {
@@ -114,10 +140,34 @@ h2 {
   background: url(../img/photo.jpg);
   background-position: center;
   overflow: hidden;
+  @media screen and (max-width: 400px) {
+    width: 100%;
+  }
 }
 
 #custom {
   width: 50%;
   background: url(../img/custom.jpg);
   background-size: cover;
+  @media screen and (max-width: 400px) {
+    width: 100%;
+  }
+}
+
+.icon {
+  height: 420px;
+  img {
+    width: 100%;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon a {
+  background: url(../img/bg-trans-icon.png);
+  height: 40px;
+  width: 40px;
+  padding: 20px;
+  border-radius: 100%;
+
 }
