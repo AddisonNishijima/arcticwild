@@ -13,6 +13,13 @@ h2 {
   text-align: center;
 }
 
+#hero {
+  background: url(../img/hero.jpg) top center no-repeat;
+  height: 100vh;
+  background-size: cover;
+  display: block;
+}
+
 #top-nav-list {
   list-style-type: none;
   display: flex;
@@ -24,6 +31,10 @@ h2 {
   }
 }
 
+#sub-nav {
+  border: solid 1px black;
+}
+
 #middle-nav-list {
   list-style-type: none;
   display: flex;
@@ -32,4 +43,61 @@ h2 {
     color: white;
     padding-left: 20px;
   }
+}
+
+.gallery {
+  width: 100vw;
+}
+
+.gallery-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.gallery-row-2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-panel {
+  height: 420px;
+  display: inline-block;
+}
+
+#raft {
+  width: 50%;
+  background: url(../img/raft.jpg);
+  background-size: cover;
+}
+
+#basecamp {
+  width: 25%;
+  background: url(../img/basecamp.jpg);
+  background-position: center;
+  overflow: hidden;
+}
+
+#backpack {
+  width: 25%;
+  background: url(../img/backpacking.jpg);
+  background-size: cover;
+}
+
+#canoe {
+  width: 50%;
+  background: url(../img/canoe.jpg);
+  background-size: cover;
+}
+
+#photo {
+  width: 25%;
+  background: url(../img/photo.jpg);
+  background-position: center;
+  overflow: hidden;
+}
+
+#custom {
+  width: 25%;
+  background: url(../img/custom.jpg);
+  background-size: cover;
 }
