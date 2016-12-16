@@ -6,30 +6,26 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #646461;
   line-height: 30px;
-  font-size: 18px;
-}
+  font-size: 18px; }
 
 h2 {
-  text-align: center;
-}
+  text-align: center; }
 
 #top-nav-list {
   list-style-type: none;
   display: flex;
-  justify-content: center;
-  li {
+  justify-content: center; }
+  #top-nav-list li {
     color: white;
     padding-left: 20px;
-    text-align: center;
-  }
-}
+    text-align: center; }
 
 #middle-nav-list {
   list-style-type: none;
   display: flex;
-  justify-content: center;
-  li {
+  justify-content: center; }
+  #middle-nav-list li {
     color: white;
-    padding-left: 20px;
-  }
-}
+    padding-left: 20px; }
+
+/*# sourceMappingURL=styles.css.map */
